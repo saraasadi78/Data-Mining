@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('Walt_disney_movie_dataset.csv')
 
+#Missing values:
+
 df_numeric = df.select_dtypes(include=[np.number])
 numeric_cols = df_numeric.columns.values
 df_non_numeric = df.select_dtypes(exclude=[np.number])
@@ -31,8 +33,6 @@ df.dropna(subset=less_missing_values_cols_list, inplace=True)
 _40_pct_missing_cols_list = list(missing_percentage_DataFrame.loc[missing_percentage_DataFrame.percentage_of_missing > 40, 'col'].values)
 df.drop(columns=_40_pct_missing_cols_list, inplace=True)
 
-
-
 df_numeric = df.select_dtypes(include=[np.number])
 numeric_cols = df_numeric.columns.values
 for col in numeric_cols:
@@ -41,3 +41,13 @@ for col in numeric_cols:
     if num_missing > 0:
         med = df[col].median() #impute with the median
         df[col] = df[col].fillna(med)
+
+#zero means that there are no missing values left in our dataset now
+#df.isnull().sum().sum()
+
+#Outliers:
+
+print(df["Running time (int)"].describe())
+df = df.loc(df["Running time (int)"] > 20)
+
+
