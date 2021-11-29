@@ -2,7 +2,7 @@
 Data mining with python on list of films produced by Walt Disney Company.
 
 ## Contents
-1- Attribute's properties
+1- [Attribute's properties](https://github.com/saraasadi78/Data-Mining#atrributes-properties)
 
 
 ## Atrribute's Properties
