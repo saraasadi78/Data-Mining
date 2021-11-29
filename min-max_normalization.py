@@ -50,23 +50,19 @@ for col in numeric_cols:
 #print(df["Running time (int)"].describe())
 df = df.loc[df["Running time (int)"] > 20]
 #print(df["Running time (int)"].describe())
-
 #print(df.duplicated(subset=None, keep='first'))
 df.drop_duplicates()
 
 
-#Normalization with min_max
+#Normalization with min_max for Running time and Budget columns with sklearn
 
 from sklearn import preprocessing
-
-#columns=['title', 'Running time (int)', 'Budget (float)']
 
 std_scale = preprocessing.StandardScaler().fit(df[['Running time (int)', 'Budget (float)']])
 df_std = std_scale.transform(df[['Running time (int)', 'Budget (float)']])
 
 minmax_scale = preprocessing.MinMaxScaler().fit(df[['Running time (int)', 'Budget (float)']])
 df_minmax = minmax_scale.transform(df[['Running time (int)', 'Budget (float)']])
-
 
 print('\nStandard deviation after standardization:\n Running time={:.2f}, Budget={:.2f}'
       .format(df_std[:,0].std(), df_std[:,1].std()))
@@ -80,7 +76,6 @@ print(df['Running time (int)'])
 print(df_std)
 
 plt.figure(figsize=(8,6))
-
 plt.scatter(df['Running time (int)'], df['Budget (float)'],color='green', label='input scale', alpha=0.5)
 plt.scatter(df_std[:,0], df_std[:,1], color='red',label='Standardized', alpha=0.5)
 plt.scatter(df_minmax[:,0], df_minmax[:,1],color='blue', label='min-max scaled [min=0, max=1]', alpha=0.5)
@@ -89,9 +84,6 @@ plt.title('scatter plot')
 plt.xlabel('Running time (int)')
 plt.ylabel('Budget (float)')
 plt.legend(loc='upper left')
-
 plt.grid()
-
 plt.tight_layout()
-
 plt.show()
