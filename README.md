@@ -6,7 +6,7 @@ Data mining with python on list of films produced by Walt Disney Company.
 
 * [Data Skewness](#data-skewness)
 
-* [Data Correctness & Completeness](#data-correctness-&-completeness)
+* [Data Correctness & Completeness](#data-correctness-and-completeness)
 
 * [Noise Detction](#noise-detection)
 
@@ -31,6 +31,7 @@ Data mining with python on list of films produced by Walt Disney Company.
 ---
 
 ## Atrribute's Properties
+[UP](#contents)
 
 | Name | Type | Range | Mean | Median | Mode | Min | Max |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -63,6 +64,7 @@ Data mining with python on list of films produced by Walt Disney Company.
 ---
 
 ## Data Skewness
+[UP](#contents)
 
 You can simply observe the skewness computed for diffrent attributes [here](skewness.ipynb).
 
@@ -80,16 +82,19 @@ Results are as follows:
 
 ---
 
-## Data Correctness & Completeness
+## Data Correctness and Completeness
+[UP](#contents)
 
 
 ---
 
 ## Noise Detection
+[UP](#contents)
 
 ---
 
 ## Histogram
+[UP](#contents)
 
 Below you can see histogram of some of the data attributes.
 You can find the computation code [here](histogram.ipynb).
@@ -108,12 +113,14 @@ You can find the computation code [here](histogram.ipynb).
 ---
 
 ## Dissimilarity Matrix
+[UP](#contents)
 
 After removing unnecessary attributes, the dissimilarity matrix have been computed. You can see and follow the computation steps [here](dissimilarity_matrix.ipynb.ipynb)
 
 ---
 
 ## Corrolation
+[UP](#contents)
 
 Corrolation between attributes of dataset have been computed after some cleaning and normalization steps. Some unnecessary attributes have been ignored and some nominal attributes have been converted to numerical values.
 The procedure and the final results can be find [here](data-corrolation.ipynb)
@@ -121,28 +128,34 @@ The procedure and the final results can be find [here](data-corrolation.ipynb)
 ---
 
 ## Scatter Plot
+[UP](#contents)
 
 
 ---
 
 ## Data Cleaning
+[UP](#contents)
 
 
 ---
 
 ## Redundant Data
+[UP](#contents)
 
 
 ---
 
 ## Dimensional Reduction
+[UP](#contents)
 
 
 ---
 
 ## Normalization
+[UP](#contents)
 
 
 ---
 
 ## numerosity Reduction
+[UP](#contents)
