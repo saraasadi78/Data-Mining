@@ -118,7 +118,7 @@ Box plots are shown below.
 
 
 #### [Budget Box Plot](/Results/budget-boxplot.png)
-![budget box plot](/Results/budget-boxplot.png)
+![budget box plot](/Results/Budget-boxplot.png)
 
 
 #### [Running Time Box Plot](/Results/Running-time-boxplot.png)
