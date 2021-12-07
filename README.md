@@ -175,8 +175,8 @@ Scatter plot for [corrolated](#corrolation) attributes are shown below.
 #### [Language-Country Scatter Plot](/Results/Language-country.png)
 ![company-director scatter](/Results/Language-country.png)
 
-#### [Budget-Box Office Scatter Plot](/Results/Budget-box_office.png)
-![company-director scatter](/Results/Budget-box_office.png)
+#### [Budget-Box Office Scatter Plot](/Results/budget-box_office.png)
+![company-director scatter](/Results/budget-box_office.png)
 
 
 
