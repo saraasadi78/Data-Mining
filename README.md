@@ -92,7 +92,7 @@ Results are as follows:
 ## Histogram
 
 Below you can see histogram of some of the data attributes.
-You can find the computation code [here](https://github.com/saraasadi78/Data-Mining/blob/main/histogram.ipynb).
+You can find the computation code [here](histogram.ipynb).
 
 
 
