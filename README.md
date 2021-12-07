@@ -121,7 +121,7 @@ You can find the computation code [here](histogram.ipynb).
 ## Dissimilarity Matrix
 [UP](#contents)
 
-After removing unnecessary attributes, the dissimilarity matrix have been computed. You can see and follow the computation steps [here](dissimilarity_matrix.ipynb.ipynb)
+After removing unnecessary attributes, the dissimilarity matrix have been computed. You can see and follow the computation steps [here](dissimilarity_matrix.ipynb)
 
 ---
 
