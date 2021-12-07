@@ -53,3 +53,13 @@ print(df["Running time (int)"].describe())
 print(df.duplicated(subset=None, keep='first'))
 df.drop_duplicates()
 
+print(df.columns)
+df.drop(columns=['Running time','Box office (float)'],axis=1,inplace=True)
+print(df.shape)
+df.drop(['Budget','Release date (datetime)'],axis=1,inplace=True)
+#print(df.shape): [450 rows x 17 columns]
+
+
+
+
+
