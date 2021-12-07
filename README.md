@@ -1,5 +1,17 @@
 # Data-Mining
-Data mining with python on list of films produced by Walt Disney Company.
+
+Data mining on a dataset of movies produced by Walt Disney Company, using python.
+
+---
+## Contributors
+
+| Name | email | github name |
+| :--: | :---: | :---------: |
+| Sara Asadi | saraasadi_78@yahoo.com | [saraasadi78](https://github.com/saraasadi78) |
+| Vahid Ramezani | vahid.ramezani.2014@gmail.com | [ConnorLynch2000](https://github.com/ConnorLynch2000) |
+
+
+---
 
 ## Contents
 * [Attribute's properties](#atrributes-properties)
@@ -204,7 +216,7 @@ All these cases have been addressed while doing [cleaning](#data-cleaning) on th
 ## Normalization
 [UP](#contents)
 
-Data have been normalized using min-max scaling which scaled data in range [0,1]. Alongside with the normalizing the dataset, z-score standardization have been also don on the dataset. You can see and compare an attribute before and after the procedure below.
+Data have been normalized using min-max scaling which scaled data in range [0,1]. Alongside with the normalizing the dataset, z-score standardization have been also done on the dataset. You can see and compare an attribute before and after the procedure below.
 
 #### [Original and Normalized Data Scatter Plot](/Results/original-and-normalized.png)
 ![original and normalized scatter](/Results/original-and-normalized.png)
