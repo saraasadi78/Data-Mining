@@ -2,31 +2,31 @@
 Data mining with python on list of films produced by Walt Disney Company.
 
 ## Contents
-* [Attribute's properties](https://github.com/saraasadi78/Data-Mining#atrributes-properties)
+* [Attribute's properties](#atrributes-properties)
 
 * [Data Skewness](#data-skewness)
 
-* [Data Correctness & Completeness]()
+* [Data Correctness & Completeness](#data-correctness-&-completeness)
 
-* [Noise Detction]()
+* [Noise Detction](#noise-detection)
 
-* [Histogram]()
+* [Histogram](#histogram)
 
-* [Dissimilarity Matrix]()
+* [Dissimilarity Matrix](#dissimilarity-matrix)
 
-* [Corrolation]()
+* [Corrolation](#corrolation)
 
-* [Scatter Plot]()
+* [Scatter Plot](#scatter-plot)
 
-* [Data Cleaning]()
+* [Data Cleaning](#data-cleaning)
 
-* [Redundant Data]()
+* [Redundant Data](#redundant-data)
 
-* [Dimensional Reduction]()
+* [Dimensional Reduction](#dimensional-reduction)
 
-* [Normalization]()
+* [Normalization](#normalization)
 
-* [Numerosity Reduction]()
+* [Numerosity Reduction](#numerosity-reduction)
 
 ---
 
@@ -95,6 +95,54 @@ Below you can see histogram of some of the data attributes.
 You can find the computation code [here](histogram.ipynb).
 
 
+#### Box Office
+![Box Office Histogram](/Results/Box_Office_Histogram.png)
+
+#### Budget
+![Budget Histogram](/Results/Budget_Histogram.png)
+
+#### Running Time
+![Running Histogram](/Results/Running_Time_Histogram.png)
 
 
+---
 
+## Dissimilarity Matrix
+
+After removing unnecessary attributes, the dissimilarity matrix have been computed. You can see and follow the computation steps [here](dissimilarity_matrix.ipynb.ipynb)
+
+---
+
+## Corrolation
+
+Corrolation between attributes of dataset have been computed after some cleaning and normalization steps. Some unnecessary attributes have been ignored and some nominal attributes have been converted to numerical values.
+The procedure and the final results can be find [here](data-corrolation.ipynb)
+
+---
+
+## Scatter Plot
+
+
+---
+
+## Data Cleaning
+
+
+---
+
+## Redundant Data
+
+
+---
+
+## Dimensional Reduction
+
+
+---
+
+## Normalization
+
+
+---
+
+## numerosity Reduction
