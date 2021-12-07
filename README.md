@@ -2,8 +2,33 @@
 Data mining with python on list of films produced by Walt Disney Company.
 
 ## Contents
-1- [Attribute's properties](https://github.com/saraasadi78/Data-Mining#atrributes-properties)
+* [Attribute's properties](https://github.com/saraasadi78/Data-Mining#atrributes-properties)
 
+* [Data Skewness]()
+
+* [Data Correctness & Completeness]()
+
+* [Noise Detction]()
+
+* [Histogram]()
+
+* [Dissimilarity Matrix]()
+
+* [Corrolation]()
+
+* [Scatter Plot]()
+
+* [Data Cleaning]()
+
+* [Redundant Data]()
+
+* [Dimensional Reduction]()
+
+* [Normalization]()
+
+* [Numerosity Reduction]()
+
+---
 
 ## Atrribute's Properties
 
@@ -34,6 +59,41 @@ Data mining with python on list of films produced by Walt Disney Company.
 | Hepburn | Nominal | -- | -- | -- | -- | -- | -- |
 | Adaption by | Nominal | -- | -- | -- | -- | -- | -- |
 | Animation by | Nominal | -- | -- | -- | -- | -- | -- |
+
+---
+
+## Data Skewness
+
+You can simply observe the skewness computed for diffrent attributes [here](https://github.com/saraasadi78/Data-Mining/blob/main/skewness.ipynb).
+
+Results are as follows:
+
+#### Box Office
+![Box Office Skewness](/Results/Box_Office_skew.png)
+
+#### Budget
+![Budget Skewness](/Results/Budget_skewness.png)
+
+#### Running Time
+![Running Time](/Results/Running_time_skew.png)
+
+
+---
+
+## Data Correctness & Completeness
+
+
+---
+
+## Noise Detection
+
+---
+
+## Histogram
+
+Below you can see histogram of some of the data attributes.
+You can find the computation code [here](https://github.com/saraasadi78/Data-Mining/blob/main/histogram.ipynb).
+
 
 
 
