@@ -8,7 +8,7 @@ Data mining with python on list of films produced by Walt Disney Company.
 
 * [Data Correctness & Completeness](#data-correctness-and-completeness)
 
-* [Noise Detction](#noise-detection)
+* [Outlier Detction](#outlier-detection)
 
 * [Histogram](#histogram)
 
@@ -94,8 +94,24 @@ You can see below the [visual results of the analysis](/Results/Incompleteness.p
 
 ---
 
-## Noise Detection
+## Outlier Detection
 [UP](#contents)
+
+Using **box plot** tool, the valid range of values for data has been computed and data records beyond the foresaid range have been removed.
+
+Box plots are shown below.
+
+#### [Box Office Box Plot](/Results/box-office-boxplot.png)
+![box office box plot](/Results/box-office-boxplot.png)
+
+
+#### [Budget Box Plot](/Results/budget-boxplot.png)
+![budget box plot](/Results/budget-boxplot.png)
+
+
+#### [Running Time Box Plot](/Results/Running-time-boxplot.png)
+![running time box plot](/Results/Running-time-boxplot.png)
+
 
 ---
 
@@ -136,6 +152,21 @@ The procedure and the final results can be find [here](data-corrolation.ipynb)
 ## Scatter Plot
 [UP](#contents)
 
+Scatter plot for [corrolated](#corrolation) attributes are shown below.
+
+#### [Company-Director Scatter Plot](/Results/Company-Director.png)
+![company-director scatter](/Results/Company-Director.png)
+
+#### [Director-Composer Scatter Plot](/Results/Director-Composer.png)
+![company-director scatter](/Results/Director-Composer.png)
+
+#### [Language-Country Scatter Plot](/Results/Language-country.png)
+![company-director scatter](/Results/Language-country.png)
+
+#### [Budget-Box Office Scatter Plot](/Results/Budget-box_office.png)
+![company-director scatter](/Results/Budget-box_office.png)
+
+
 
 ---
 
@@ -155,12 +186,18 @@ You can see the procedure and the results by executing [cleaningDataset.py](clea
 ## Redundant Data
 [UP](#contents)
 
+redundant data records have been handled or removed during [data cleaning](#data-cleaning) proccess.
+
 
 ---
 
 ## Dimensional Reduction
 [UP](#contents)
 
+
+Some useful notes can be taken from regularly observing the dataset. There are some attributes with different labels but containing same data values, Outwardly and inwardly. There also are some attributes with more than 40% of missing data or invalid data.
+
+All these cases have been addressed while doing [cleaning](#data-cleaning) on the data set. 
 
 ---
 
@@ -185,4 +222,4 @@ The results are accessible at [min-max_normalization.py](min-max_normalization.p
 [UP](#contents)
 
 Knowing the consepts of the records of the datasets, it's simply wrong to perform a numerosity reduction on the data.
-Each record contains data about a single movie produced by Disney Pictures and records are not normally related to on another. **But**, redundancy is not accepted and duplicate data records must be removed from the dataset. This problem has been solved during data cleaning proccess.
+Each record contains data about a single movie produced by Disney Pictures and records are not normally related to on another. **But**, redundancy is not accepted and duplicate data records must be removed from the dataset.**Also** outlier records have been detected and removed. This problems have been solved during [data cleaning](#data-cleaning) and [outlier detection](#outlier-detection) proccesses.
