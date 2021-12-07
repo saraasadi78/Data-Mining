@@ -85,6 +85,12 @@ Results are as follows:
 ## Data Correctness and Completeness
 [UP](#contents)
 
+Using human sences and also statistical factors the correctness and completeness of data have been analysed. [Data cleaning](#data-cleaning) step have been taken based on the results of the aforementioned analysis.
+
+You can see below the [visual results of the analysis](/Results/Incompleteness.png).
+
+![incompleteness](/Results/Incompleteness.png)
+
 
 ---
 
@@ -136,6 +142,13 @@ The procedure and the final results can be find [here](data-corrolation.ipynb)
 ## Data Cleaning
 [UP](#contents)
 
+Doing cleaning on the dataset with 35 attributes(columns), we reached a dataset with only 17 attributes(columns).
+
+Columns containing more than 40% missing or invalid values have been dropped.
+
+Also the remaining columns' missing values have been filled automatically using attribute's median.
+
+You can see the procedure and the results by executing [cleaningDataset.py](cleaningDatase.py) file.
 
 ---
 
@@ -154,8 +167,22 @@ The procedure and the final results can be find [here](data-corrolation.ipynb)
 ## Normalization
 [UP](#contents)
 
+Data have been normalized using min-max scaling which scaled data in range [0,1]. Alongside with the normalizing the dataset, z-score standardization have been also don on the dataset. You can see and compare an attribute before and after the procedure below.
+
+#### [Original and Normalized Data Scatter Plot](/Results/original-and-normalized.png)
+![original and normalized scatter](/Results/original-and-normalized.png)
+
+
+#### [Normalized Data Scatter Plot](/Results/normalized-scatter-plot.png)
+![normalized scatter plot](/Results/normalized-scatter-plot.png)
+
+
+The results are accessible at [min-max_normalization.py](min-max_normalization.py).
 
 ---
 
 ## numerosity Reduction
 [UP](#contents)
+
+Knowing the consepts of the records of the datasets, it's simply wrong to perform a numerosity reduction on the data.
+Each record contains data about a single movie produced by Disney Pictures and records are not normally related to on another. **But**, redundancy is not accepted and duplicate data records must be removed from the dataset. This problem has been solved during data cleaning proccess.
