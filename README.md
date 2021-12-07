@@ -4,7 +4,7 @@ Data mining with python on list of films produced by Walt Disney Company.
 ## Contents
 * [Attribute's properties](https://github.com/saraasadi78/Data-Mining#atrributes-properties)
 
-* [Data Skewness]()
+* [Data Skewness](#data-skewness)
 
 * [Data Correctness & Completeness]()
 
@@ -64,7 +64,7 @@ Data mining with python on list of films produced by Walt Disney Company.
 
 ## Data Skewness
 
-You can simply observe the skewness computed for diffrent attributes [here](https://github.com/saraasadi78/Data-Mining/blob/main/skewness.ipynb).
+You can simply observe the skewness computed for diffrent attributes [here](skewness.ipynb).
 
 Results are as follows:
 
