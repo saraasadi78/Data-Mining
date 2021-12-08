@@ -159,6 +159,9 @@ After removing unnecessary attributes, the dissimilarity matrix have been comput
 Corrolation between attributes of dataset have been computed after some cleaning and normalization steps. Some unnecessary attributes have been ignored and some nominal attributes have been converted to numerical values.
 The procedure and the final results can be find [here](data-corrolation.ipynb)
 
+#### [Corrolation Heatmap](/Results/corrolation-heatmap.png)
+![corrolation heatmap](/Results/corrolation-heatmap.png)
+
 ---
 
 ## Scatter Plot
