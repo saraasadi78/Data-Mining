@@ -7,7 +7,7 @@ Data mining on a dataset of movies produced by Walt Disney Company, using python
 
 | Name | email | github name |
 | :--: | :---: | :---------: |
-| Sara Asadi | saraasadi_78@yahoo.com | [saraasadi78](https://github.com/saraasadi78) |
+| Sara Asadi | saraasadi7899@gmail.com | [saraasadi78](https://github.com/saraasadi78) |
 | Vahid Ramezani | vahid.ramezani.2014@gmail.com | [ConnorLynch2000](https://github.com/ConnorLynch2000) |
 
 
