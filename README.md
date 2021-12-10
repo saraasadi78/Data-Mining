@@ -109,7 +109,7 @@ You can see below the [visual results of the analysis](/Results/Incompleteness.p
 ## Outlier Detection
 [:arrow_up:](#contents)
 
-Using **box plot** tool, the valid range of values for data has been computed and data records beyond the foresaid range have been removed.
+Using **box plot** tool, the valid range of values for data has been computed and data records above the upper quartile and below the lower quartile have been removed.
 
 Box plots are shown below.
 
@@ -237,4 +237,4 @@ The results are accessible at [min-max_normalization.py](min-max_normalization.p
 [:arrow_up:](#contents)
 
 Knowing the consepts of the records of the datasets, it's simply wrong to perform a numerosity reduction on the data.
-Each record contains data about a single movie produced by Disney Pictures and records are not normally related to on another. **But**, redundancy is not accepted and duplicate data records must be removed from the dataset. **Also** outlier records have been detected and removed. This problems have been solved during [data cleaning](#data-cleaning) and [outlier detection](#outlier-detection) proccesses.
+Each record contains data about a single movie produced by Disney Pictures and records are not normally related to on another. **However**, redundancy is not accepted and duplicate data records must be removed from the dataset. **Also** outlier records have been detected and removed. This problems have been solved during [data cleaning](#data-cleaning) and [outlier detection](#outlier-detection) proccesses.
