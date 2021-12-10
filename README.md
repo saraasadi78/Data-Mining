@@ -6,7 +6,7 @@ Data mining on a dataset of movies produced by Walt Disney Company, using python
 ## Contributors
 
 | Name | email | github name |
-| :--: | :---: | :---------: |
+| :-- | :---: | :---------: |
 | Sara Asadi | saraasadi7899@gmail.com | [saraasadi78](https://github.com/saraasadi78) |
 | Vahid Ramezani | vahid.ramezani.2014@gmail.com | [ConnorLynch2000](https://github.com/ConnorLynch2000) |
 
@@ -192,7 +192,7 @@ Doing cleaning on the dataset with 35 attributes(columns), we reached a dataset 
 
 Columns containing more than 40% missing or invalid values have been dropped.
 
-Also the remaining columns' missing values have been filled automatically using attribute's median.
+Also the remaining columns' missing values have been imputed automatically using attribute's median.
 
 You can see the procedure and the results by executing [cleaningDataset.py](cleaningDatase.py) file.
 
@@ -237,4 +237,4 @@ The results are accessible at [min-max_normalization.py](min-max_normalization.p
 [UP](#contents)
 
 Knowing the consepts of the records of the datasets, it's simply wrong to perform a numerosity reduction on the data.
-Each record contains data about a single movie produced by Disney Pictures and records are not normally related to on another. **But**, redundancy is not accepted and duplicate data records must be removed from the dataset.**Also** outlier records have been detected and removed. This problems have been solved during [data cleaning](#data-cleaning) and [outlier detection](#outlier-detection) proccesses.
+Each record contains data about a single movie produced by Disney Pictures and records are not normally related to on another. **But**, redundancy is not accepted and duplicate data records must be removed from the dataset. **Also** outlier records have been detected and removed. This problems have been solved during [data cleaning](#data-cleaning) and [outlier detection](#outlier-detection) proccesses.
