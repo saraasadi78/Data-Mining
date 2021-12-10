@@ -76,7 +76,7 @@ Data mining on a dataset of movies produced by Walt Disney Company, using python
 ---
 
 ## Data Skewness
-[UP](#contents)
+[:arrow_up:](#contents)
 
 You can simply observe the skewness computed for diffrent attributes [here](skewness.ipynb).
 
@@ -95,7 +95,7 @@ Results are as follows:
 ---
 
 ## Data Correctness and Completeness
-[UP](#contents)
+[:arrow_up:](#contents)
 
 Using human sences and also statistical factors the correctness and completeness of data have been analysed. [Data cleaning](#data-cleaning) step have been taken based on the results of the aforementioned analysis.
 
@@ -107,7 +107,7 @@ You can see below the [visual results of the analysis](/Results/Incompleteness.p
 ---
 
 ## Outlier Detection
-[UP](#contents)
+[:arrow_up:](#contents)
 
 Using **box plot** tool, the valid range of values for data has been computed and data records beyond the foresaid range have been removed.
 
@@ -128,7 +128,7 @@ Box plots are shown below.
 ---
 
 ## Histogram
-[UP](#contents)
+[:arrow_up:](#contents)
 
 Below you can see histogram of some of the data attributes.
 You can find the computation code [here](histogram.ipynb).
@@ -147,14 +147,14 @@ You can find the computation code [here](histogram.ipynb).
 ---
 
 ## Dissimilarity Matrix
-[UP](#contents)
+[:arrow_up:](#contents)
 
 After removing unnecessary attributes, the dissimilarity matrix have been computed. You can see and follow the computation steps [here]: (dissimilarity_matrix.ipynb)
 
 ---
 
 ## Corrolation
-[UP](#contents)
+[:arrow_up:](#contents)
 
 Corrolation between attributes of dataset have been computed after some cleaning and normalization steps. Some unnecessary attributes have been ignored and some nominal attributes have been converted to numerical values.
 The procedure and the final results can be find [here](data-corrolation.ipynb)
@@ -165,7 +165,7 @@ The procedure and the final results can be find [here](data-corrolation.ipynb)
 ---
 
 ## Scatter Plot
-[UP](#contents)
+[:arrow_up:](#contents)
 
 Scatter plot for [corrolated](#corrolation) attributes are shown below.
 
@@ -186,7 +186,7 @@ Scatter plot for [corrolated](#corrolation) attributes are shown below.
 ---
 
 ## Data Cleaning
-[UP](#contents)
+[:arrow_up:](#contents)
 
 Doing cleaning on the dataset with 35 attributes(columns), we reached a dataset with only 17 attributes(columns).
 
@@ -199,7 +199,7 @@ You can see the procedure and the results by executing [cleaningDataset.py](clea
 ---
 
 ## Redundant Data
-[UP](#contents)
+[:arrow_up:](#contents)
 
 redundant data records have been handled or removed during [data cleaning](#data-cleaning) proccess.
 
@@ -207,7 +207,7 @@ redundant data records have been handled or removed during [data cleaning](#data
 ---
 
 ## Dimensional Reduction
-[UP](#contents)
+[:arrow_up:](#contents)
 
 
 Some useful notes can be taken from regularly observing the dataset. There are some attributes with different labels but containing same data values, Outwardly and inwardly. There also are some attributes with more than 40% of missing data or invalid data.
@@ -217,7 +217,7 @@ All these cases have been addressed while doing [cleaning](#data-cleaning) on th
 ---
 
 ## Normalization
-[UP](#contents)
+[:arrow_up:](#contents)
 
 Data have been normalized using min-max scaling which scaled data in range [0,1]. Alongside with the normalizing the dataset, z-score standardization have been also done on the dataset. You can see and compare an attribute before and after the procedure below.
 
@@ -234,7 +234,7 @@ The results are accessible at [min-max_normalization.py](min-max_normalization.p
 ---
 
 ## numerosity Reduction
-[UP](#contents)
+[:arrow_up:](#contents)
 
 Knowing the consepts of the records of the datasets, it's simply wrong to perform a numerosity reduction on the data.
 Each record contains data about a single movie produced by Disney Pictures and records are not normally related to on another. **But**, redundancy is not accepted and duplicate data records must be removed from the dataset. **Also** outlier records have been detected and removed. This problems have been solved during [data cleaning](#data-cleaning) and [outlier detection](#outlier-detection) proccesses.
