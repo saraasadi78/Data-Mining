@@ -43,7 +43,7 @@ Data mining on a dataset of movies produced by Walt Disney Company, using python
 ---
 
 ## Atrribute's Properties
-[UP](#contents)
+[:arrow_up:](#contents)
 
 | Name | Type | Range | Mean | Median | Mode | Min | Max |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
