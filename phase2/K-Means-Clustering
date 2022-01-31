@@ -28,6 +28,14 @@ plt.scatter(data_with_clusters['Running time (int)'],data_with_clusters['Budget 
 plt.title("K-MEANS (K=8)")
 plt.show()
 
+print(k_mean.labels_)
+df['cluster']=k_mean.labels_
+print(df)
+
+df.groupby(by=['cluster']).first
+#our data is successfully clustered
+
+
 
 ###############################################################################
 #clustering by writer and directors:
