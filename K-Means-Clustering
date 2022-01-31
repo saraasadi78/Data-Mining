@@ -1,0 +1,77 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.colors as mcolors
+from sklearn.cluster import KMeans
+from sklearn.cluster import DBSCAN
+from sklearn.cluster import AgglomerativeClustering
+from sklearn.cluster import MeanShift, estimate_bandwidth
+from sklearn.decomposition import PCA
+from sklearn import metrics
+from sklearn.metrics import cluster
+import statistics
+
+df = pd.read_csv('Walt_disney_movie_dataset.csv')
+
+# plt.scatter(df['Running time (int)'],df['Budget (float)'])
+# plt.show()
+Time_Budget = df[['Running time (int)', 'Budget (float)']]
+Time_Budget=Time_Budget.fillna(0)
+
+k_mean=KMeans(n_clusters=8, n_init=10, max_iter=300, tol=1e-4, verbose=0, random_state=None, copy_x=True, algorithm="auto")
+k_mean.fit(Time_Budget)
+
+identified_clusters = k_mean.fit_predict(Time_Budget)
+data_with_clusters = df.copy()
+data_with_clusters['Clusters'] = identified_clusters
+plt.scatter(data_with_clusters['Running time (int)'],data_with_clusters['Budget (float)'],c=data_with_clusters['Clusters'],cmap='rainbow')
+plt.title("K-MEANS (K=8)")
+plt.show()
+
+
+###############################################################################
+#clustering by writer and directors:
+
+# d=df['Directed by']
+# w=df['Written by']
+#
+#
+# def nominal2numeric(nominal):
+#     numeric_value =1
+#     nominal_uq_map = {}
+#     numeric_ret_list =[]
+#     for i in nominal:
+#         if i in nominal_uq_map:
+#             numeric_ret_list.append(nominal_uq_map[i])
+#         else:
+#             nominal_uq_map[i] = numeric_value
+#             numeric_value += 1
+#             numeric_ret_list.append(nominal_uq_map[i])
+#     return pd.DataFrame(numeric_ret_list)
+#
+#
+# director = nominal2numeric(d)
+# writer = nominal2numeric(w)
+#
+# director.columns = ['Director']
+# writer.columns = ['Writer']
+#
+# data = pd.concat([director, writer],axis=1)
+#
+# kmeans=KMeans(n_clusters=8,n_init=10,max_iter=300,tol=1e-4,verbose=0,random_state=None,copy_x=True,algorithm="auto")
+# kmeans.fit(data)
+#
+# identified_clusters = kmeans.fit_predict(data)
+# data_with_clusters = df.copy()
+# data_with_clusters['Clusters'] = identified_clusters
+# plt.scatter(data_with_clusters['Running time (int)'],data_with_clusters['Budget (float)'],c=data_with_clusters['Clusters'],cmap='rainbow')
+# plt.show()
+
+
+
+
+
+
+
+
+
