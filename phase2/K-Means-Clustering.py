@@ -3,13 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 from sklearn.cluster import KMeans
-from sklearn.cluster import DBSCAN
-from sklearn.cluster import AgglomerativeClustering
 from sklearn.cluster import MeanShift, estimate_bandwidth
-from sklearn.decomposition import PCA
 from sklearn import metrics
 from sklearn.metrics import cluster
 import statistics
+from sklearn.metrics import silhouette_score
+from sklearn.metrics import adjusted_rand_score
 
 df = pd.read_csv('Walt_disney_movie_dataset.csv')
 
@@ -73,6 +72,8 @@ df.groupby(by=['cluster']).first
 #our data is successfully clustered
 
 
+print("ARI=", adjusted_rand_score())
+
 
 ###############################################################################
 #clustering by writer and directors:
@@ -111,11 +112,4 @@ df.groupby(by=['cluster']).first
 # data_with_clusters['Clusters'] = identified_clusters
 # plt.scatter(data_with_clusters['Running time (int)'],data_with_clusters['Budget (float)'],c=data_with_clusters['Clusters'],cmap='rainbow')
 # plt.show()
-
-
-
-
-
-
-
 
