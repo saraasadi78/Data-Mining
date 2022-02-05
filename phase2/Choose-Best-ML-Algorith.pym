@@ -1,0 +1,79 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn import svm
+from sklearn import metrics
+import seaborn as sns
+from sklearn import model_selection
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+
+#partition bandi: miad random state ro moshakhas mikone
+seed=7
+
+df = pd.read_csv('Walt_disney_movie_dataset.csv')
+
+df['Box office (float)'] = df['Box office (float)'].replace(np.NaN, 0)
+df['Budget (float)'] = df['Budget (float)'].replace(np.NaN, 0)
+
+df['profit'] = df.apply(lambda _: '', axis=1)
+
+df = df.reset_index()
+for index, row in df.iterrows():
+    df['profit'] = df['Box office (float)'] - df['Budget (float)']
+
+df['profit'].apply(np.ceil)
+df['profit'].round(decimals = 3)
+
+df['Class'] = df.apply(lambda _: '', axis=1)
+
+df['profit']=df['profit'].astype(np.int64)
+
+for index, row in df.iterrows():
+    if df['profit'].ge(0).all():
+        df['Class']="Bestselling movie"
+    else:
+        df['Class']="Low-selling movie"
+
+# x = df.iloc[:, :-1].values
+# y = df.iloc[:, 12].values
+
+# x_train, x_test, y_train, y_test = train_test_split(x, df['Class'], test_size=0.4)
+
+x_train , x_test , y_tran , y_test = model_selection.train_test_split(x,y,test_size=0.3,random_state=seed)
+y_tran=y_tran.ravel()
+
+model=[]
+model.append(('KNN',KNeighborsClassifier()))
+model.append(('CART',DecisionTreeClassifier()))
+model.append(('SVM',SVC()))
+model.append(('NB',GaussianNB()))
+model.append(('LR',LogisticRegression))
+model.append(('LDA',LinearDiscriminantAnalysis()))
+
+result=[]
+names=[]
+
+for name,models in model:
+    kfold=model_selection.KFold(n_splits=10,random_state=seed)
+    result=model_selection.cross_val_score(models,x_train,y_tran,cv=kfold,scoring='accuracy')
+    result.append(result)
+    names.append(name)
+
+
+#compare algs
+fig=plt.figure()
+fig.suptitle('Algorithm comparision')
+ax=fig.add_subplot(111)
+plt.boxplot(result)
+ax.set_xticklabls(names)
+plt.show()
+
