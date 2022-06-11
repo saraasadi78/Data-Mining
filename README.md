@@ -3,6 +3,12 @@
 Data mining on a dataset of movies produced by Walt Disney Company, using python.
 
 ---
+
+# Introduction
+
+In this paper, we are willing to share the results of our **Data Mining** on the Walt Diesney moveies dataset.
+
+---
 ## Contributors
 
 | Name | email | github name |
